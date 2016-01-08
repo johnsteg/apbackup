@@ -71,8 +71,8 @@ def open_ssh_conn(ip,username,password):
         print "connection error"
 #Calling the SSH function
 try:
-    username = raw_input('enter Username mike : ') 
-    password = raw_input('enter password as mjohn: ')
+    username = raw_input('enter Username: ') 
+    password = raw_input('enter password: ')
     ip_file = open(r"C:\Users\special_ebube\Desktop\ipaddress.txt","r") #getting ip from file
     ip_file.seek(0)
     for ip_address in ip_file.readlines(): # loops through the ip address file
